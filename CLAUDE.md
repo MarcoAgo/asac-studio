@@ -1,7 +1,12 @@
 # asac-studio
 
 Sanity Studio for the Amici del Cuore Scaligera website. The website is the
-sibling repo `../asac-website`; see its `CLAUDE.md` and the project plan.
+sibling repo `../asac-website`; see its `CLAUDE.md`.
+
+Project documents live in the website repo: start from
+`../asac-website/docs/progetto/README.md`. The content model is in
+`setup-progetto.md` §3 and `piano-infrastruttura.md` §4; the blocks to model
+come from the prototype in `../asac-website/docs/design/prototipo/`.
 
 ## Git
 
