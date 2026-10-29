@@ -1,5 +1,5 @@
 {
-  "name": "asac---website",
+  "name": "asac-studio",
   "private": true,
   "version": "1.0.0",
   "main": "package.json",
@@ -9,12 +9,14 @@
     "deploy": "sanity deploy",
     "deploy-graphql": "sanity graphql deploy",
     "dev": "sanity dev",
-    "start": "sanity start"
+    "start": "sanity start",
+    "typegen": "sanity schema extract --workspace production --enforce-required-fields && sanity typegen generate"
   },
   "keywords": [
     "sanity"
   ],
   "dependencies": {
+    "@sanity/locale-it-it": "^1.1.36",
     "@sanity/vision": "^6.21.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
