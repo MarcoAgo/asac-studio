@@ -6,6 +6,14 @@ export const DATASETS = {
   DEVELOPMENT: 'development',
 } as const
 
+// For the client calls made by custom validations.
+export const API_VERSION = '2025-02-19'
+
+// v1 publishes Italian only; routable documents carry a `language` field so a
+// translation plugin can be added later without migrating content.
+export const LANGUAGES = [{id: 'it', title: 'Italiano'}] as const
+export const DEFAULT_LANGUAGE = 'it'
+
 // Documents with a fixed ID: one per dataset, never created or deleted by hand.
 export const SINGLETON_TYPES = new Set(['settings'])
 
