@@ -1,4 +1,9 @@
+import {activityType} from './documents/activity'
+import {eventType} from './documents/event'
+import {newsType} from './documents/news'
 import {pageType} from './documents/page'
+import {personType} from './documents/person'
+import {publicDocumentType} from './documents/publicDocument'
 import {richiestaType} from './documents/richiesta'
 import {settingsType} from './documents/settings'
 import {actionType} from './objects/action'
@@ -16,7 +21,16 @@ import {
 } from './objects/rows'
 import {seoType} from './objects/seo'
 
-const documents = [settingsType, pageType, richiestaType]
+const documents = [
+  settingsType,
+  pageType,
+  eventType,
+  newsType,
+  activityType,
+  personType,
+  publicDocumentType,
+  richiestaType,
+]
 
 const objects = [
   figureType,
