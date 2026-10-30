@@ -8,9 +8,9 @@ export const structure: StructureResolver = (S) =>
       S.divider(),
       S.listItem()
         .title('Richieste')
-        .schemaType('richiesta')
+        .schemaType('request')
         .child(
-          S.documentTypeList('richiesta')
+          S.documentTypeList('request')
             .title('Richieste')
             .defaultOrdering([{field: '_createdAt', direction: 'desc'}]),
         ),

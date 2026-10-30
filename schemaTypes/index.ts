@@ -1,11 +1,15 @@
 import {activityType} from './documents/activity'
 import {eventType} from './documents/event'
+import {languageType} from './documents/language'
+import {navigationType} from './documents/navigation'
 import {newsType} from './documents/news'
 import {pageType} from './documents/page'
 import {personType} from './documents/person'
 import {publicDocumentType} from './documents/publicDocument'
-import {richiestaType} from './documents/richiesta'
+import {redirectType} from './documents/redirect'
+import {requestType} from './documents/request'
 import {settingsType} from './documents/settings'
+import {uiStringsType, uiStringType} from './documents/uiStrings'
 import {actionType} from './objects/action'
 import {addressType, bankAccountType, openingHoursType, socialLinkType} from './objects/contact'
 import {figureType} from './objects/figure'
@@ -29,7 +33,11 @@ const documents = [
   activityType,
   personType,
   publicDocumentType,
-  richiestaType,
+  requestType,
+  navigationType,
+  uiStringsType,
+  redirectType,
+  languageType,
 ]
 
 const objects = [
@@ -49,6 +57,7 @@ const objects = [
   openingHoursType,
   bankAccountType,
   socialLinkType,
+  uiStringType,
 ]
 
 export const schemaTypes = [...documents, ...objects]
