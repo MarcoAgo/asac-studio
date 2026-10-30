@@ -24,6 +24,7 @@ import {
   stepType,
 } from './objects/rows'
 import {seoType} from './objects/seo'
+import {sectionTypes} from './sections'
 
 const documents = [
   settingsType,
@@ -60,4 +61,4 @@ const objects = [
   uiStringType,
 ]
 
-export const schemaTypes = [...documents, ...objects]
+export const schemaTypes = [...documents, ...objects, ...sectionTypes]

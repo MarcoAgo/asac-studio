@@ -1,6 +1,7 @@
 import {DocumentIcon} from '@sanity/icons'
 import {defineField, defineType} from 'sanity'
 import {languageField, seoField} from '../fields'
+import {sectionsField} from '../sections'
 import {isUniqueInLanguage, slugifyPath} from '../slug'
 
 // Paths served by code templates (event and article pages), never by a page.
@@ -46,6 +47,7 @@ export const pageType = defineType({
           return true
         }),
     }),
+    sectionsField,
     languageField,
     seoField,
   ],
